@@ -1,4 +1,4 @@
-HeaderWriter
+WaveHeader
 ====
 
 Just generates a WAVE-file header, with the specified length as argument.
