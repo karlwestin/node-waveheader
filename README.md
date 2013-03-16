@@ -14,4 +14,4 @@ myOtherFileStream.write(header(22050 * 8) {
   sampleRate: 22050,
   channels: 2,
   bitDepth: 8
-}); // 44100 khz * 8 seconds
+}); 
