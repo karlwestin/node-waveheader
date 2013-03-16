@@ -1,0 +1,7 @@
+{
+  "name": "waveheader",
+  "description": "Writes a wave header based on options/size to a buffer, returns buffer",
+  "author": "karl westin <karl.westin@gmail.com>",
+  "dependencies": {},
+  "version": "0.0.1"
+}
