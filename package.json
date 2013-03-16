@@ -2,6 +2,10 @@
   "name": "waveheader",
   "description": "Writes a wave header based on options/size to a buffer, returns buffer",
   "author": "karl westin <karl.westin@gmail.com>",
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/karlwestin/node-waveheader.git"
+  }, 
   "dependencies": {},
   "version": "0.0.1"
 }
