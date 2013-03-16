@@ -2,9 +2,9 @@ HeaderWriter
 ====
 
 Just generates a WAVE-file header, with the specified length as argument.
-var header = require("headerwriter");
 
 ```javascript
+var header = require("waveheader");
 //write to a normal fs.createWriteStream
 myFileStream.write(header(44100 * 8)); // 44100 khz * 8 seconds
 
