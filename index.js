@@ -1,3 +1,6 @@
+
+var debug = require('debug')('waveheader');
+
 /*
  * WaveHeader
  *
@@ -9,7 +12,7 @@
  *
  * the only reason for this module to exist is that i couldn't
  * understand how to use the one above, so I made my own.
- * You propably wanna use that one 
+ * You propably wanna use that one
  */
 module.exports = function generateHeader(length, options) {
   options = options || {};
@@ -25,7 +28,7 @@ module.exports = function generateHeader(length, options) {
   var sampleRate = options.sampleRate || 44100;
   var bitDepth = options.bitDepth || 16;
 
-  var headerLength = 44; 
+  var headerLength = 44;
   var dataLength = length || MAX_WAV;
   var fileSize = dataLength + headerLength;
   var header = new Buffer(headerLength);
@@ -36,7 +39,7 @@ module.exports = function generateHeader(length, options) {
   offset += RIFF.length;
 
   // write the file size minus the identifier and this 32-bit int
-  console.log("Writing filesize: %d", fileSize);
+  debug("Writing filesize: %d", fileSize);
   header['writeUInt32' + endianness](fileSize - 8, offset);
   offset += 4;
 
