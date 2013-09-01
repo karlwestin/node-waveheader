@@ -15,3 +15,12 @@ myOtherFileStream.write(header(22050 * 8) {
   channels: 2,
   bitDepth: 8
 }); 
+```
+
+### Use with tonegenerator:
+Also check out the module for generating tones as raw PCM data,
+[tonegenerator](http://npmjs.com/package/tonegenerator).
+
+### using the debug module
+
+Waveheader uses the 'debug' module to clean the output a bit. If running your program from the command line, and you wanna see the size written to the header, do `DEBUG=waveheader node yourprogram.js`
